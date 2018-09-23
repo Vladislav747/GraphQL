@@ -1,0 +1,29 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "yeah": "nodemon server.js",
+    "build": "babel --presets es2015 server.js --out-file server.bundle.js | babel --presets es2015 todo_babel.js --out-file todo.js",
+    "dev3": "babel-node  server.js"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.1.0",
+    "body-parser": "^1.18.3",
+    "eslint": "^5.6.0",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2",
+    "mongodb": "^3.1.6",
+    "mongoose": "^5.2.17"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^4.16.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
